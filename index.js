@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/contact-me", (req, res) => {
-  res.send(req.boy);
+  res.send(req.body);
 })
 
 app.listen(app.get("port"), (err) => {
